@@ -30,5 +30,14 @@ For the technical analysis of this project, we:
 - Visualizing Cryptocurrencies Results
 
 ## Results and Methods
+_Preprocessing the Data for PCA_
+
+Using our knowledge of `Pandas`, we preprocessed the dataset in order to perform _PCA_. The `crypto_data.csv` was retrieved from [CryptoCompare](https://min-api.cryptocompare.com/data/all/coinlist). For this section of our project and methodology, we kept all the cryptocurrencies that are being traded. We then drop the _IsTrading_ column and removed rows that have at least one null value. From this we then filtered the _crypto_df_ DataFrame so it only has rows where coins have been mined. After we filtered the DataFrame, we create a new DataFrame that holds only the cryptocurrency names, and use the _crypto_df_ DataFrame index as the index for the new DataFrame. A crucial step in this process was to remove the _CoinName_ column from the _crypto_df_ DataFrame since it's not going to be used on the _clustering algorithm_. The _get_dummies()_ method was incorporated to create variables for the two text features, _Algorithm_ and _ProofType_, and store the resulting data in a new DataFrame named _X_. Lastly, we used the `StandardScaler` _fit_transform()_ function to standardize the features from the _X DataFrame_.
+
+_Reducing Data Dimensions Using PCA_
+
+_Clustering Cryptocurrencies Using K-means_
+
+_Visualizing Cryptocurrencies Results_
 
 ## Summary
