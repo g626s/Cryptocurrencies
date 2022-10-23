@@ -55,5 +55,3 @@ _Visualizing Cryptocurrencies Results_
 Using our knowledge of creating scatter plots with `Plotly Express` and `hvplot`, we visualized the distinct groups that correspond to the three principal components we created previously, then we created a table with all the currently tradable cryptocurrencies using the _hvplot.table() function_.
 
 <img width="722" alt="Screen Shot 2022-10-22 at 5 15 01 PM" src="https://user-images.githubusercontent.com/107281474/197367059-8cdf058a-014b-4506-827f-c7f88bb96611.png">
-
-## Summary
